@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap");
+
+/* global css variables */
+:root {
+  /* --primary-color: #047aed; */
+  /* --secondary-color: #1c3fa8; */
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --primary-color: #005ecc;
+  --secondary-color: #70ad47;
+}
+/* css resets */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar .logo-text {
+  font-family: "Pacifico", cursive;
+  /* margin-right: 10px; */
+}
+.navbar img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  font-size: large;
+}
+.navbar ul li a:hover {
+  border-bottom: 2.4px #fff solid;
+}
+
+.navbar .logo {
+  display: flex;
+}
+
+.navbar .logo img {
+  margin-right: 10px;
+}
+
+/* showcase */
+
+.imp-text {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.showcase .imp-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.showcase img {
+  height: 60px;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+.showcase p {
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.showcase .card {
+  text-align: center;
+}
+
+.showcase .card .btn {
+  background-color: var(--secondary-color);
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+/* welcome */
+.welcome {
+  padding-top: 100px;
+}
+.welcome-heading {
+  font-size: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* technologies */
+
+.technologies .flex {
+  flex-wrap: wrap;
+}
+.technologies .card img {
+  height: 80px;
+  width: 120px;
+}
+.technologies .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.technologies .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.technologies .card:hover {
+  transform: translateY(-15px);
+}
+
+/* quizzes.html */
+.quizzes h2 {
+  font-size: 1.8rem;
+}
+
+.quizzes .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.quizzes .card {
+  text-align: center;
+  height: 260px;
+}
+
+.quizzes .card .btn {
+  background-color: var(--secondary-color);
+}
+
+/* learnbooks.html */
+
+.learnbooks .card .btn {
+  background-color: var(--secondary-color);
+}
+
+.learnbooks h2 {
+  font-size: 1.8rem;
+}
+.learnbooks .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.learnbooks .card {
+  text-align: center;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  margin: 5px;
+}
+
+.learnbooks a {
+  display: block;
+  margin-top: 20px;
+}
