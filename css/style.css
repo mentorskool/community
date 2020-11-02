@@ -162,6 +162,10 @@ img {
 
 /* technologies */
 
+.technologies .container {
+  max-width: 1200px;
+}
+
 .technologies .flex {
   flex-wrap: wrap;
 }
