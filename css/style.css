@@ -285,10 +285,29 @@ img {
   border-radius: 0;
 }
 
-.learnbook-content .card .flex {
-  justify-content: space-between;
+.learnbook-content .card .grid {
+  margin-bottom: 20px;
 }
 
-.learnbook-content .card .flex .btn {
+.learnbook-content .card .btn {
   border-radius: 0;
+}
+
+.learnbook-content .card img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.learnbook-content .card .grid .tags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.learnbook-content .card .grid .tag {
+  display: block;
+  padding: 4px 15px;
+  margin-right: 5px;
+  background-color: #e3e3e3;
 }
