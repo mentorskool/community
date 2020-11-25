@@ -1,3 +1,3 @@
 ## Mentorskool Community Website Repo
 
-### Preview Link `https://mentorskool.github.io/community/`
+### Preview Link https://mentorskool.github.io/community/
